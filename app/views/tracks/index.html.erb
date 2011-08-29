@@ -1,0 +1,19 @@
+<% title "Tracks" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Localization</th>
+  </tr>
+  <% for track in @tracks %>
+    <tr>
+      <td><%= track.name %></td>
+      <td><%= track.localization %></td>
+      <td><%= link_to "Show", track %></td>
+      <td><%= link_to "Edit", edit_track_path(track) %></td>
+      <td><%= link_to "Destroy", track, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Track", new_track_path %></p>

@@ -1,0 +1,25 @@
+<% title "Races" %>
+
+<table>
+  <tr>
+    <th>Championship</th>
+    <th>Track</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Status</th>
+  </tr>
+  <% for race in @races %>
+    <tr>
+      <td><%= race.championship_id %></td>
+      <td><%= race.track_id %></td>
+      <td><%= race.date %></td>
+      <td><%= race.time %></td>
+      <td><%= race.status %></td>
+      <td><%= link_to "Show", race %></td>
+      <td><%= link_to "Edit", edit_race_path(race) %></td>
+      <td><%= link_to "Destroy", race, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Race", new_race_path %></p>

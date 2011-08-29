@@ -1,0 +1,12 @@
+<%= form_for @registered_pilot do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :pilot_id %><br />
+    <%= f.text_field :pilot_id %>
+  </p>
+  <p>
+    <%= f.label :championship_id %><br />
+    <%= f.text_field :championship_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

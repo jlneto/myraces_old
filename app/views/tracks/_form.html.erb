@@ -1,0 +1,12 @@
+<%= form_for @track do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :localization %><br />
+    <%= f.text_area :localization %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

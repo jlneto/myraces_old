@@ -1,0 +1,13 @@
+one:
+  championship_id: 1
+  pilot_id: 1
+  position: 1
+  points: 1
+  observation: MyText
+
+two:
+  championship_id: 1
+  pilot_id: 1
+  position: 1
+  points: 1
+  observation: MyText

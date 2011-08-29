@@ -1,0 +1,20 @@
+<% title "Championship" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @championship.name %>
+</p>
+<p>
+  <strong>Dates:</strong>
+  <%= @championship.dates %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @championship.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_championship_path(@championship) %> |
+  <%= link_to "Destroy", @championship, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", championships_path %>
+</p>

@@ -1,0 +1,13 @@
+one:
+  championship_id: 1
+  track_id: 1
+  date: 2011-08-29
+  time: MyString
+  status: MyString
+
+two:
+  championship_id: 1
+  track_id: 1
+  date: 2011-08-29
+  time: MyString
+  status: MyString

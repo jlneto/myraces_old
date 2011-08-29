@@ -1,0 +1,28 @@
+<% title "Pilot" %>
+
+<p>
+  <strong>User:</strong>
+  <%= @pilot.user_id %>
+</p>
+<p>
+  <strong>Nick Name:</strong>
+  <%= @pilot.nick_name %>
+</p>
+<p>
+  <strong>Team:</strong>
+  <%= @pilot.team_id %>
+</p>
+<p>
+  <strong>Active:</strong>
+  <%= @pilot.active %>
+</p>
+<p>
+  <strong>Picture:</strong>
+  <%= @pilot.picture %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_pilot_path(@pilot) %> |
+  <%= link_to "Destroy", @pilot, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", pilots_path %>
+</p>

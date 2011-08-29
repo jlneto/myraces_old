@@ -1,0 +1,21 @@
+<% title "Championships" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Dates</th>
+    <th>Description</th>
+  </tr>
+  <% for championship in @championships %>
+    <tr>
+      <td><%= championship.name %></td>
+      <td><%= championship.dates %></td>
+      <td><%= championship.description %></td>
+      <td><%= link_to "Show", championship %></td>
+      <td><%= link_to "Edit", edit_championship_path(championship) %></td>
+      <td><%= link_to "Destroy", championship, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Championship", new_championship_path %></p>

@@ -1,0 +1,28 @@
+<% title "Championship Result" %>
+
+<p>
+  <strong>Championship:</strong>
+  <%= @championship_result.championship_id %>
+</p>
+<p>
+  <strong>Pilot:</strong>
+  <%= @championship_result.pilot_id %>
+</p>
+<p>
+  <strong>Position:</strong>
+  <%= @championship_result.position %>
+</p>
+<p>
+  <strong>Points:</strong>
+  <%= @championship_result.points %>
+</p>
+<p>
+  <strong>Observation:</strong>
+  <%= @championship_result.observation %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_championship_result_path(@championship_result) %> |
+  <%= link_to "Destroy", @championship_result, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", championship_results_path %>
+</p>

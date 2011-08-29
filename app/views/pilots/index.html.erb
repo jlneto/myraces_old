@@ -1,0 +1,25 @@
+<% title "Pilots" %>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Nick Name</th>
+    <th>Team</th>
+    <th>Active</th>
+    <th>Picture</th>
+  </tr>
+  <% for pilot in @pilots %>
+    <tr>
+      <td><%= pilot.user_id %></td>
+      <td><%= pilot.nick_name %></td>
+      <td><%= pilot.team_id %></td>
+      <td><%= pilot.active %></td>
+      <td><%= pilot.picture %></td>
+      <td><%= link_to "Show", pilot %></td>
+      <td><%= link_to "Edit", edit_pilot_path(pilot) %></td>
+      <td><%= link_to "Destroy", pilot, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Pilot", new_pilot_path %></p>

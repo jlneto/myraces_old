@@ -1,0 +1,13 @@
+one:
+  user_id: 1
+  nick_name: MyString
+  team_id: 1
+  active: false
+  picture: MyString
+
+two:
+  user_id: 1
+  nick_name: MyString
+  team_id: 1
+  active: false
+  picture: MyString

@@ -1,0 +1,28 @@
+<% title "Race" %>
+
+<p>
+  <strong>Championship:</strong>
+  <%= @race.championship_id %>
+</p>
+<p>
+  <strong>Track:</strong>
+  <%= @race.track_id %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @race.date %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= @race.time %>
+</p>
+<p>
+  <strong>Status:</strong>
+  <%= @race.status %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_race_path(@race) %> |
+  <%= link_to "Destroy", @race, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", races_path %>
+</p>

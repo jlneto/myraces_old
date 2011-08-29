@@ -1,0 +1,24 @@
+<%= form_for @pilot do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :nick_name %><br />
+    <%= f.text_field :nick_name %>
+  </p>
+  <p>
+    <%= f.label :team_id %><br />
+    <%= f.text_field :team_id %>
+  </p>
+  <p>
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </p>
+  <p>
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

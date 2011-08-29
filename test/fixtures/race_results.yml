@@ -1,0 +1,13 @@
+one:
+  race_id: 1
+  pilot_id: 1
+  position: 1
+  observation: MyText
+  points: 1
+
+two:
+  race_id: 1
+  pilot_id: 1
+  position: 1
+  observation: MyText
+  points: 1

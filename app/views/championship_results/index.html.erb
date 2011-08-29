@@ -1,0 +1,25 @@
+<% title "Championship Results" %>
+
+<table>
+  <tr>
+    <th>Championship</th>
+    <th>Pilot</th>
+    <th>Position</th>
+    <th>Points</th>
+    <th>Observation</th>
+  </tr>
+  <% for championship_result in @championship_results %>
+    <tr>
+      <td><%= championship_result.championship_id %></td>
+      <td><%= championship_result.pilot_id %></td>
+      <td><%= championship_result.position %></td>
+      <td><%= championship_result.points %></td>
+      <td><%= championship_result.observation %></td>
+      <td><%= link_to "Show", championship_result %></td>
+      <td><%= link_to "Edit", edit_championship_result_path(championship_result) %></td>
+      <td><%= link_to "Destroy", championship_result, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Championship Result", new_championship_result_path %></p>
