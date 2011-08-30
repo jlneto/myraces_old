@@ -1,23 +1,23 @@
-rails g nifty:scaffold team name:string descritpion:string
-rails g nifty:scaffold track name:string localization:text
+rails g nifty:scaffold team name:string descritpion:text
+rails g nifty:scaffold track name:string descritpion:text
 rails g nifty:scaffold championship name:string dates:string description:text
-rails g nifty:scaffold race championship_id:integer track_id:integer date:date time:string status:string 
-rails g nifty:scaffold pilot user_id:integer nick_name:string team_id:integer active:boolean
+rails g nifty:scaffold championship_pilot pilot_id:integer, championship_id:integer, observation:text
+rails g nifty:scaffold race championship_id:integer name:string track_id:integer date:date time:string status:string description:text
+rails g nifty:scaffold pilot name:string full_name:string email:string active:boolean team_id:integer user_id:integer description:text
 rails g nifty:scaffold pilot_race pilot_id:integer race_id:integer
 rails g nifty:scaffold race_result race_id:integer pilot_id:integer position:integer observation:text points:integer
 rails g nifty:scaffold championship_result championship_id:integer pilot_id:integer position:integer points:integer observation:text
-rails g controller home index
-
-rails g nifty:scaffold registered_pilot pilot_id:integer championship_id:integer
 
 
 
 
-rails destroy nifty:scaffold teams
-rails destroy nifty:scaffold tracks
-rails destroy nifty:scaffold championchips
-rails destroy nifty:scaffold races 
-rails destroy nifty:scaffold pilots
-rails destroy nifty:scaffold pilot_races 
-rails destroy nifty:scaffold race_results 
-rails destroy nifty:scaffold championship_results  
+
+rails destroy nifty:scaffold team
+rails destroy nifty:scaffold track
+rails destroy nifty:scaffold championchip
+rails destroy nifty:scaffold championship_pilot
+rails destroy nifty:scaffold race 
+rails destroy nifty:scaffold pilot
+rails destroy nifty:scaffold pilot_race 
+rails destroy nifty:scaffold race_result 
+rails destroy nifty:scaffold championship_result  

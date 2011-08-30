@@ -3,6 +3,7 @@ class Pilot < ActiveRecord::Base
 	belongs_to :user
 	has_many :race_results
 	has_many :championship_results
+	belongs_to :team
 	#has_many :championships, :through => :registered_pilots
 	
 end
