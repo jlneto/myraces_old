@@ -1,14 +1,80 @@
 Este é um aplicativo simples para gerir Campeonatos e Corridas.
-Seu modelo atualmente consiste de:
+Por padrão todas tabelas, campos, variaveis e códigos são escritos em inglês.
 
-Equipes
+Funcionalidades:
 
-Pistas
+Cadastros de Pilotos com Respectivas Equipes [0%]
+Cadastro de Pistas [0%]
+Cadastro de Campeonatos com seus respectivo Pilotos e Corridas [0%]
+Cadastro de Resultado de uma corrida
+Atualização de Resultado de Campeonato
+Visualização da situação de um campeonato (todos pilotos)
+Visualização da situação de um campeonato para um piloto
+Visualização da situação de um piloto, todos seus campeonatos
+Visualização da situação de todos campeonatos
 
-Pilotos
 
-Campeonatos
-    +--- Pilotos
-    +--- Corridas
-    |       + Resultados
-    +--- Resultados
+Geração inicial usando scaffold:
+
+rails g nifty:scaffold team name:string descritpion:text
+rails g nifty:scaffold track name:string descritpion:text
+rails g nifty:scaffold championship name:string dates:string description:text
+rails g nifty:scaffold championship_pilot pilot_id:integer, championship_id:integer, observation:text
+rails g nifty:scaffold race championship_id:integer name:string track_id:integer date:date time:string status:string description:text
+rails g nifty:scaffold pilot name:string full_name:string email:string active:boolean team_id:integer user_id:integer description:text
+rails g nifty:scaffold pilot_race pilot_id:integer race_id:integer
+rails g nifty:scaffold race_result race_id:integer pilot_id:integer position:integer observation:text points:integer
+rails g nifty:scaffold championship_result championship_id:integer pilot_id:integer position:integer points:integer observation:text
+
+
+Para refazer tudo:
+rails destroy nifty:scaffold team
+rails destroy nifty:scaffold track
+rails destroy nifty:scaffold championchip
+rails destroy nifty:scaffold championship_pilot
+rails destroy nifty:scaffold race 
+rails destroy nifty:scaffold pilot
+rails destroy nifty:scaffold pilot_race 
+rails destroy nifty:scaffold race_result 
+rails destroy nifty:scaffold championship_result
+
+
+Modelo de Dados
+
+Team
+	has_many :pilots
+  
+Pilot
+	has_many :race_results
+	has_many :championship_results
+	belongs_to :team
+  has_many :championships, :through => :championship_pilots
+
+Track
+	has_many :races
+  	
+Championship 
+	has_many :races
+	has_many :championship_pilots
+	has_many :championship_results
+	has_many :teams, :through => :championship_pilots
+
+ChampionshipPilot
+  belongs_to :pilot
+  belongs_to :championship
+  	
+Race
+	belongs_to :championship
+	belongs_to :track
+
+RaceResult
+	belongs_to :pilot
+	belongs_to :race
+    	
+ChampionshipResult
+	belongs_to  :championship
+    	
+    
+
+Foi instalado o módulo Rails_admin para validar o modelo, associações e criação inicial de dados de testes
+
