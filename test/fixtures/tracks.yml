@@ -1,7 +1,7 @@
-one:
-  name: MyString
-  localization: MyText
+granja:
+  name: Granja Viana
+  localization: Kartodromo Granja Viana
 
-two:
-  name: MyString
-  localization: MyText
+kartin:
+  name: Kartin
+  localization: Kartin Jaguaré

@@ -1,4 +1,6 @@
 Myraces::Application.routes.draw do
+  resources :championship_pilots
+
   resources :registered_pilots
 
   resources :championships

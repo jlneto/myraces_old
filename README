@@ -16,10 +16,10 @@ Visualização da situação de todos campeonatos
 
 Geração inicial usando scaffold:
 
-rails g nifty:scaffold team name:string descritpion:text
-rails g nifty:scaffold track name:string descritpion:text
+rails g nifty:scaffold team name:string description:text
+rails g nifty:scaffold track name:string description:text
 rails g nifty:scaffold championship name:string dates:string description:text
-rails g nifty:scaffold championship_pilot pilot_id:integer, championship_id:integer, observation:text
+rails g nifty:scaffold championship_pilot pilot_id:integer championship_id:integer observation:text
 rails g nifty:scaffold race championship_id:integer name:string track_id:integer date:date time:string status:string description:text
 rails g nifty:scaffold pilot name:string full_name:string email:string active:boolean team_id:integer user_id:integer description:text
 rails g nifty:scaffold pilot_race pilot_id:integer race_id:integer
@@ -30,7 +30,7 @@ rails g nifty:scaffold championship_result championship_id:integer pilot_id:inte
 Para refazer tudo:
 rails destroy nifty:scaffold team
 rails destroy nifty:scaffold track
-rails destroy nifty:scaffold championchip
+rails destroy nifty:scaffold championship
 rails destroy nifty:scaffold championship_pilot
 rails destroy nifty:scaffold race 
 rails destroy nifty:scaffold pilot

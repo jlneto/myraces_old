@@ -1,7 +1,44 @@
-one:
-  name: MyString
-  descritpion: MyString
+Ferrari:
+  name: Ferrari
+  descritpion: Scuderia Ferrari
 
-two:
-  name: MyString
-  descritpion: MyString
+Lotus:
+  name: Lotus
+  descritpion: Lotus Racing
+
+Williams:
+  name: Williams
+  descritpion: Williams Racing
+
+Porsche:
+  name: Porsche
+  descritpion: Porsche Racing
+
+Penske:
+  name: Penske
+  descritpion: Penske Racing
+
+Mercedes:
+  name: Mercedes
+  descritpion: Mercedes Racing
+
+Renault:
+  name: Renault
+  descritpion: Renault Racing
+
+Mclaren:
+  name: McLaren
+  descritpion: McLaren Racing
+
+RBR:
+  name: RBR
+  descritpion: Red Bull Racing
+
+BMW:
+  name: BMW
+  descritpion: BMW Racing
+
+Virgin:
+  name: Virgin
+  descritpion: Virgin Racing
+

@@ -1,0 +1,20 @@
+<% title "Championship Pilot" %>
+
+<p>
+  <strong>Pilot:</strong>
+  <%= @championship_pilot.pilot_id %>
+</p>
+<p>
+  <strong>Championship:</strong>
+  <%= @championship_pilot.championship_id %>
+</p>
+<p>
+  <strong>Observation:</strong>
+  <%= @championship_pilot.observation %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_championship_pilot_path(@championship_pilot) %> |
+  <%= link_to "Destroy", @championship_pilot, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", championship_pilots_path %>
+</p>

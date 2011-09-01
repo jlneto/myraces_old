@@ -4,6 +4,9 @@ class Pilot < ActiveRecord::Base
 	has_many :race_results
 	has_many :championship_results
 	belongs_to :team
-	#has_many :championships, :through => :registered_pilots
+  has_many :championship_pilots
+
+  #Da pau com o Admin
+	#has_many :championships, :through => :championship_pilots
 	
 end

@@ -1,4 +1,4 @@
-<%= form_for @registered_pilot do |f| %>
+<%= form_for @championship_pilot do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :pilot_id %><br />
@@ -7,6 +7,10 @@
   <p>
     <%= f.label :championship_id %><br />
     <%= f.text_field :championship_id %>
+  </p>
+  <p>
+    <%= f.label :observation %><br />
+    <%= f.text_area :observation %>
   </p>
   <p><%= f.submit %></p>
 <% end %>

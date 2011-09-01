@@ -1,0 +1,21 @@
+<% title "Championship Pilots" %>
+
+<table>
+  <tr>
+    <th>Pilot</th>
+    <th>Championship</th>
+    <th>Observation</th>
+  </tr>
+  <% for championship_pilot in @championship_pilots %>
+    <tr>
+      <td><%= championship_pilot.pilot_id %></td>
+      <td><%= championship_pilot.championship_id %></td>
+      <td><%= championship_pilot.observation %></td>
+      <td><%= link_to "Show", championship_pilot %></td>
+      <td><%= link_to "Edit", edit_championship_pilot_path(championship_pilot) %></td>
+      <td><%= link_to "Destroy", championship_pilot, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Championship Pilot", new_championship_pilot_path %></p>

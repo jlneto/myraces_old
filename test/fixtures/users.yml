@@ -1,11 +1,102 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+francesco:
+  email: Francesco@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+luiz_fernando:
+  email: Luiz Fernando@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+mauricio:
+  email: Mauricio@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+carlos:
+  email: Carlos@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+jens:
+  email: Jens@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+tristao:
+  email: Tristão@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+marcelo:
+  email: Marcelo@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+alfredo:
+  email: Alfredo@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+alisson:
+  email: Alisson@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+edson:
+  email: Edson@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+sergio:
+  email: Sergio@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+thiago:
+  email: Thiago@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+andre:
+  email: Andre@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+mauro:
+  email: Mauro@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+adalberto:
+  email: Adalberto@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+luciano:
+  email: Luciano@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+fernando:
+  email: Fernando@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+neto:
+  email: Neto@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+jose_Caibar:
+  email: Jose Caibar@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+marcio:
+  email: Marcio@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+bruno:
+  email: Bruno@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+eduardo:
+  email: Eduardo@fika.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+
+eu:
+  email: jose.neto@taxweb.com.br
+  encrypted_password: $2a$10$48rpkF4E2fkbXxMXBB9P.uZeaKtQcbHDtbChJL01d66.15SJZ3YiS
+  reset_password_token:
+  reset_password_sent_at:
+  remember_created_at:
+  sign_in_count: 3
+  current_sign_in_at: 2011-08-31 22:51:02
+  last_sign_in_at: 2011-08-30 11:52:47
+  current_sign_in_ip: 127.0.0.1
+  last_sign_in_ip: 127.0.0.1
+  created_at: 2011-08-29 17:34:24
+  updated_at: 2011-08-31 22:51:02
+

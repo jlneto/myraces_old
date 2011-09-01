@@ -1,13 +1,13 @@
-one:
-  race_id: 1
-  pilot_id: 1
-  position: 1
-  observation: MyText
-  points: 1
+<% Race.all.each do |race|%>
+  <% i = 1 %>
+  <% Pilot.all.each do |pilot|%>
 
-two:
-  race_id: 1
-  pilot_id: 1
-  position: 1
-  observation: MyText
-  points: 1
+rr_<%= race.id %>_<%= pilot.id %>:
+  race_id: <%= race.id %>
+  pilot_id: <%= pilot.id %>
+  position: <%= i %>
+  points: <%= 30-i %>
+
+    <% i = i + 1 %>
+  <% end %>
+<% end %>

@@ -1,0 +1,2 @@
+module ChampionshipPilotsHelper
+end

@@ -1,13 +1,15 @@
-one:
-  championship_id: 1
-  pilot_id: 1
-  position: 1
-  points: 1
-  observation: MyText
+<% Championship.all.each do |championship|%>
+  <% i = 1 %>
+  <% Pilot.all.each do |pilot|%>
 
-two:
-  championship_id: 1
-  pilot_id: 1
-  position: 1
-  points: 1
-  observation: MyText
+cr_<%= championship.id %>_<%= pilot.id %>:
+  championship_id: <%= championship.id %>
+  pilot_id: <%= pilot.id %>
+  position: <%= i %>
+  points: <%= 1 * 10 %>
+  observation: Pontos fake
+
+    <% i = i + 1 %>
+  <% end %>
+<% end %>
+

@@ -1,9 +1,9 @@
-one:
-  name: MyString
-  dates: MyString
-  description: MyText
+fika2010:
+  name: Fika2010
+  dates: jan a Dez/2019
+  description: Cameponato de Kart Amador 2010
 
-two:
-  name: MyString
-  dates: MyString
-  description: MyText
+fika2011:
+  name: Fika2011
+  dates: jan a Dez/2011
+  description: Cameponato de Kart Amador 2011

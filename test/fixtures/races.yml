@@ -1,13 +1,77 @@
-one:
-  championship_id: 1
-  track_id: 1
-  date: 2011-08-29
-  time: MyString
-  status: MyString
+r012011:
+  championship: fika2011
+  track: granja
+  date: 2011-01-01
+  time: 9:00hs
+  status: Finalizada
 
-two:
-  championship_id: 1
-  track_id: 1
-  date: 2011-08-29
-  time: MyString
-  status: MyString
+r022011:
+  championship: fika2011
+  track: granja
+  date: 2011-02-01
+  time: 9:00hs
+  status: Finalizada
+
+r032011:
+  championship: fika2011
+  track: granja
+  date: 2011-03-01
+  time: 9:00hs
+  status: Finalizada
+
+r042011:
+  championship: fika2011
+  track: granja
+  date: 2011-04-01
+  time: 9:00hs
+  status: Finalizada
+
+r052011:
+  championship: fika2011
+  track: granja
+  date: 2011-05-01
+  time: 9:00hs
+  status: Finalizada
+
+r062011:
+  championship: fika2011
+  track: granja
+  date: 2011-06-01
+  time: 9:00hs
+  status: Finalizada
+
+r072011:
+  championship: fika2011
+  track: granja
+  date: 2011-07-01
+  time: 9:00hs
+  status: Finalizada
+
+r082011:
+  championship: fika2011
+  track: granja
+  date: 2011-08-01
+  time: 9:00hs
+  status: Finalizada
+
+r092011:
+  championship: fika2011
+  track: granja
+  date: 2011-09-01
+  time: 9:00hs
+  status: Finalizada
+
+r102011:
+  championship: fika2011
+  track: granja
+  date: 2011-10-01
+  time: 9:00hs
+  status: Finalizada
+
+r112011:
+  championship: fika2011
+  track: granja
+  date: 2011-11-01
+  time: 9:00hs
+  status: Finalizada
+

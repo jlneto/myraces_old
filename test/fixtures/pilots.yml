@@ -1,13 +1,133 @@
-one:
-  user_id: 1
-  nick_name: MyString
-  team_id: 1
-  active: false
-  picture: MyString
+francesco:
+  name: Francesco
+  team: Ferrari
+  active: true
+  user: francesco
 
-two:
-  user_id: 1
-  nick_name: MyString
-  team_id: 1
-  active: false
-  picture: MyString
+luiz_fernando:
+  name: Luiz Fernando
+  team: Ferrari
+  active: true
+  user: luiz_fernando
+
+mauricio:
+  name: Mauricio
+  team: Lotus
+  active: true
+  user: mauricio
+
+carlos:
+  name: Carlos
+  team: Lotus
+  active: true
+  user: carlos
+
+jens:
+  name: Jens
+  team: Williams
+  active: true
+  user: jens
+
+tristao:
+  name: Tristão
+  team: Williams
+  active: true
+  user: tristao
+
+marcelo:
+  name: Marcelo
+  team: Porsche
+  active: true
+  user: marcelo
+
+alfredo:
+  name: Alfredo
+  team: Porsche
+  active: true
+  user: alfredo
+
+alisson:
+  name: Alisson
+  team: Penske
+  active: true
+  user: alisson
+
+edson:
+  name: Edson
+  team: Penske
+  active: true
+  user: edson
+
+sergio:
+  name: Sergio
+  team: Mercedes
+  active: true
+  user: sergio
+
+thiago:
+  name: Thiago
+  team: Mercedes
+  active: true
+  user: thiago
+
+andre:
+  name: Andre
+  team: Renault
+  active: true
+  user: andre
+
+mauro:
+  name: Mauro
+  team: Renault
+  active: true
+  user: mauro
+
+adalberto:
+  name: Adalberto
+  team: Mclaren
+  active: true
+  user: adalberto
+
+luciano:
+  name: Luciano
+  team: Mclaren
+  active: true
+  user: luciano
+
+fernando:
+  name: Fernando
+  team: RBR
+  active: true
+  user: fernando
+
+neto:
+  name: Neto
+  team: RBR
+  active: true
+  user: neto
+
+jose_Caibar:
+  name: Jose Caibar
+  team: BMW
+  active: true
+  user: jose_Caibar
+
+marcio:
+  name: Marcio
+  team: BMW
+  active: true
+  user: marcio
+
+bruno:
+  name: Bruno
+  team: Virgin
+  active: true
+  user: bruno
+
+eduardo:
+  name: Eduardo
+  team: Virgin
+  active: true
+  user: eduardo
+
+

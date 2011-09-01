@@ -1,0 +1,9 @@
+<% Pilot.all.each do |pilot|%>
+fika2010<%= pilot.id %>:
+  pilot_id: <%= pilot.id %>
+  championship: fika2010
+
+fika2011<%= pilot.id %>:
+  pilot_id: <%= pilot.id %>
+  championship: fika2011
+<% end %>
