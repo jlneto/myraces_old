@@ -1,2 +1,27 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Bem Vindo <%= current_user.email %></h1>
+
+<% if @pilot %>
+    <p>Aqui a sua classificação nos seus campeonatos!</p>
+    <% @pilot.championships.each do |c| %>
+        <h3><%= c.name %></h3>
+        <table>
+        <% c.championship_results.order(:position).each do |r| %>
+            <tr <%= "style='font-weight:bold;'".html_safe if r.pilot_id == @pilot.id %>>
+            <td>
+            <%= "#{r.position} - #{r.pilot.name} (#{r.pilot.team.name}) com #{r.points}" %>
+            </td>
+            <% races = c.races.order(:date) %>
+            <% races.each do |race| %>
+                <% result = RaceResult.where(:pilot_id => r.pilot_id).where(:race_id => race.id).all %>
+                <td>
+                <%= "#{result[0].points} (#{result[0].position})" if result[0] %>
+                </td>
+            <% end %>
+            </tr>
+        <% end  %>
+        </table>
+    <% end %>
+
+<% else %>
+
+<% end %>

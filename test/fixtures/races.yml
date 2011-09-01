@@ -1,77 +1,11 @@
-r012011:
-  championship: fika2011
+<% Championship.all.each do |championship|%>
+  <% [1,2,3,4,5,6,7,8,9,10].each do |i| %>
+r<%= i %>_<%= championship.name %>:
+  championship_id: <%= championship.id %>
   track: granja
   date: 2011-01-01
   time: 9:00hs
-  status: Finalizada
-
-r022011:
-  championship: fika2011
-  track: granja
-  date: 2011-02-01
-  time: 9:00hs
-  status: Finalizada
-
-r032011:
-  championship: fika2011
-  track: granja
-  date: 2011-03-01
-  time: 9:00hs
-  status: Finalizada
-
-r042011:
-  championship: fika2011
-  track: granja
-  date: 2011-04-01
-  time: 9:00hs
-  status: Finalizada
-
-r052011:
-  championship: fika2011
-  track: granja
-  date: 2011-05-01
-  time: 9:00hs
-  status: Finalizada
-
-r062011:
-  championship: fika2011
-  track: granja
-  date: 2011-06-01
-  time: 9:00hs
-  status: Finalizada
-
-r072011:
-  championship: fika2011
-  track: granja
-  date: 2011-07-01
-  time: 9:00hs
-  status: Finalizada
-
-r082011:
-  championship: fika2011
-  track: granja
-  date: 2011-08-01
-  time: 9:00hs
-  status: Finalizada
-
-r092011:
-  championship: fika2011
-  track: granja
-  date: 2011-09-01
-  time: 9:00hs
-  status: Finalizada
-
-r102011:
-  championship: fika2011
-  track: granja
-  date: 2011-10-01
-  time: 9:00hs
-  status: Finalizada
-
-r112011:
-  championship: fika2011
-  track: granja
-  date: 2011-11-01
-  time: 9:00hs
-  status: Finalizada
+  status: --
+  <% end %>
+<% end %>
 

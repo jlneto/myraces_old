@@ -6,7 +6,7 @@ cr_<%= championship.id %>_<%= pilot.id %>:
   championship_id: <%= championship.id %>
   pilot_id: <%= pilot.id %>
   position: <%= i %>
-  points: <%= 1 * 10 %>
+  points: <%= 300 -(i * 10) %>
   observation: Pontos fake
 
     <% i = i + 1 %>

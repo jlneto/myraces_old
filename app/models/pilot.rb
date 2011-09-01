@@ -7,6 +7,6 @@ class Pilot < ActiveRecord::Base
   has_many :championship_pilots
 
   #Da pau com o Admin
-	#has_many :championships, :through => :championship_pilots
+	has_many :championships, :through => :championship_pilots
 	
 end
