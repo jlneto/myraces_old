@@ -6,8 +6,7 @@ rr_<%= race.id %>_<%= pilot.id %>:
   race_id: <%= race.id %>
   pilot_id: <%= pilot.id %>
   position: <%= i %>
-  points: <%= 30-i %>
-
+  points: <%= Race.position_points(i) %>
     <% i = i + 1 %>
   <% end %>
 <% end %>

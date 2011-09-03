@@ -1,0 +1,5 @@
+<h3>Classificação</h3>
+<% @championship.championship_results.order(:position).limit(10).each do |r|%>
+    <li><%=  "#{r.position} - #{r.pilot.name} : #{r.pilot.team.name}" %> </li>
+<% end %>
+<%= link_to "mais...", championship_path(@championship) %>

@@ -8,13 +8,10 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <% if user_signed_in? %>
-      <%#= t('connected_as') %><%= current_user.email %>.
-      <%= t('not_you') %> <%= link_to t('sign_out'), destroy_user_session_path, :method => :delete %>
-    <% else %>
-      <%= link_to t('sign_in'), new_user_session_path %> or <%= link_to t('sign_up'), new_user_registration_path  %> |
-    <% end %>
-    <%= link_to "Admin", "admin" %>
+
+    <h1 style="text-align: center;">
+      <%= link_to "FIKA", root_path, :style => "color:white"  %>
+    </h1>
     <div id="container">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
@@ -22,5 +19,17 @@
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
     </div>
+    <p align="center">
+
+    <% if user_signed_in? %>
+      <%#= t('connected_as') %><%= current_user.email %>.
+      <%= t('not_you') %> <%= link_to t('sign_out'), destroy_user_session_path, :method => :delete %>
+    <% else %>
+      <%= link_to t('sign_in'), new_user_session_path %> or <%= link_to t('sign_up'), new_user_registration_path  %> |
+    <% end %>
+    <%= link_to "Admin", "admin" %>
+    </p>
+
   </body>
+
 </html>

@@ -1,16 +1,6 @@
-<% title "Pilot" %>
-
+<% title @pilot.name %>
 <p>
-  <strong>User:</strong>
-  <%= @pilot.user_id %>
-</p>
-<p>
-  <strong>Nick Name:</strong>
-  <%= @pilot.nick_name %>
-</p>
-<p>
-  <strong>Team:</strong>
-  <%= @pilot.team_id %>
+  <%= link_to "#{@pilot.team.name}", team_path(@pilot.team) %>
 </p>
 <p>
   <strong>Active:</strong>
@@ -18,8 +8,10 @@
 </p>
 <p>
   <strong>Picture:</strong>
-  <%= @pilot.picture %>
+  <%= image_tag @pilot.picture, :title => "title", :class => "class" if @pilot.picture %>
 </p>
+
+<%= render :partial => 'results' %>
 
 <p>
   <%= link_to "Edit", edit_pilot_path(@pilot) %> |

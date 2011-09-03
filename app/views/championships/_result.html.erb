@@ -1,0 +1,32 @@
+<h3>Classificação</h3>
+<% races = @championship.races.order(:date) %>
+
+<table>
+<tr>
+  <td>Pilotos</td>
+  <td colspan="<%= races.count %>" align=center >Corridas</td>
+</tr>
+  <tr>
+    <td></td>
+    <% races.each do |race| %>
+        <td><%= link_to race.date, race_path(race) %></td>
+    <% end %>
+  </tr>
+
+
+<% @championship.championship_results.order(:position).each do |r| %>
+    <tr <%= "style='font-weight:bold;'".html_safe if r.pilot_id == current_user.id %>>
+    <td>
+      <%= r.position %> - 
+      <%= link_to r.pilot.name, pilot_path(r.pilot) %> : 
+      <%= "#{r.pilot.team.name} com #{r.points} pts" %>
+    </td>
+    <% races.each do |race| %>
+        <% result = RaceResult.where(:pilot_id => r.pilot_id).where(:race_id => race.id).all %>
+        <td>
+        <%= "#{result[0].points} (#{result[0].position})" if result[0] %>
+        </td>
+    <% end %>
+    </tr>
+<% end  %>
+</table>

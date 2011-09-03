@@ -2,11 +2,11 @@
 
 <p>
   <strong>Championship:</strong>
-  <%= @race.championship_id %>
+  <%= @race.championship.name %>
 </p>
 <p>
   <strong>Track:</strong>
-  <%= @race.track_id %>
+  <%= @race.track.name %>
 </p>
 <p>
   <strong>Date:</strong>
@@ -20,6 +20,8 @@
   <strong>Status:</strong>
   <%= @race.status %>
 </p>
+
+<%= render :partial => 'results' %>
 
 <p>
   <%= link_to "Edit", edit_race_path(@race) %> |

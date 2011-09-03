@@ -1,0 +1,8 @@
+<% @pilot.championships.order("name desc").each_with_index do |c,i| %>
+  <h3><%= link_to c.name, championship_path(c) %></h3>
+  <%  if i == 0 %> 
+    <%= render :partial => 'championships/result', :locals => { :@championship => c } %>
+  <% else %>
+    <%= render :partial => 'championships/result_short', :locals => { :@championship => c } %>
+  <% end %>
+<% end %>

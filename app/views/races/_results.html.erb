@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <td>Posição</td>
+    <td>Piloto</td>
+    <td>Pontos</td>
+    <td>Tempo Total</td>
+    <td>Melhor Volta</td>
+    <td>Obs</td>
+   </tr>
+<% @race.race_results.order(:position).each do |r| %>
+    <tr>
+      <td><%= r.position %></td>
+      <td><%= r.pilot.name %></td>
+      <td><%= r.points %></td>
+      <td>Tempo Total</td>
+      <td>Melhor Volta</td>
+      <td><%= r.observation %></td>
+    </tr>
+<% end %>
+</table>
